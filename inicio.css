@@ -1,0 +1,303 @@
+body {
+    margin: 0;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Barra de navegación */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.3s ease;
+    font-size: 1.2em;
+}
+
+.navbar a:hover {
+    color: red;
+}
+/* Barra de navegación */
+
+/* Video */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.video-overlay h1 {
+    font-size: 4em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.video-overlay .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    color: white;
+    background-color: rgba(51, 51, 51, 0.8);
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.video-overlay .btn:hover {
+    color: red;
+    border-color: red;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar a {
+        font-size: 1em;
+        padding: 12px 10px;
+    }
+
+    .video-overlay h1 {
+        font-size: 2.5em;
+    }
+
+    .video-overlay .btn {
+        font-size: 1.2em;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .video-overlay h1 {
+        font-size: 2em;
+    }
+
+    .video-overlay .btn {
+        font-size: 1em;
+        padding: 6px 15px;
+    }
+}
+/* Video */
+
+/*evento*/
+.event-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    margin: 40px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.event-info {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    border-radius: 10px; 
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px; 
+    text-align: center;
+    transition: transform 0.3s ease; 
+}
+
+.event-info:hover {
+    transform: translateY(-5px);
+}
+
+.event-info h2 {
+    font-size: 1.5em;
+    margin: 0;
+    color: white;
+}
+
+.event-info .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px; 
+    color: white;
+    background-color: rgba(51, 51, 51, 0.8);
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: red;
+    border-color: red;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.divider {
+    border: 1px solid red;
+    margin: 10px 0;
+}
+/*evento*/
+
+/*lugar*/
+.location-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    margin: 40px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.location-info {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.location-image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    margin: 10px 0; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.location-image:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.7); 
+}
+/*lugar*/
+/*contactos*/
+.contact-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    margin: 40px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.contact-info {
+    text-align: center;
+    margin: 30px auto;
+    color: white;
+}
+
+.contact-info p {
+    margin: 20px 0; 
+}
+
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.contact-form h2 {
+    color: white;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 10px;
+    color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 0, 0, 0.5);
+}
+
+.contact-form button {
+    padding: 10px 30px;
+    color: white;
+    background-color: rgba(51, 51, 51, 0.8);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: red;
+}
+/*contactos*/
+/*footer*/
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 10px 0; 
+}
+
+.social-links {
+    margin: 10px 0;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: red; 
+}
+
+.social-links i {
+    margin-right: 5px;
+}
+/*footer*/
