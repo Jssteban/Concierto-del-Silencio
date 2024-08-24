@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reserva de Entrada</title>
+    <link rel="stylesheet" href="entradas.css">
+</head>
+<body>
+    <div class="oval-container">
+        <form action="#" method="POST" class="reservation-form">
+            <h2>Reserva tu Entrada</h2>
+            <input type="text" class="styled-input" name="nombre" placeholder="Nombre Completo" required>
+            <input type="email" class="styled-input" name="email" placeholder="Correo Electrónico" required>
+            <input type="tel" class="styled-input" name="telefono" placeholder="Número de Teléfono" required>
+            <input type="text" class="styled-input" name="direccion" placeholder="Dirección" required>
+            <input type="number" class="styled-input" name="cantidad" placeholder="Cantidad de Entradas" min="1" required>
+            <button type="submit" class="submit-button">Reservar</button>
+        </form>
+    </div>
+</body>
+</html>
